@@ -7,7 +7,7 @@ Introduction
 TimeTag is a time series database implemented in C# for the PowerShell and .NET environments. The idea is
 you throw numbers and associated timestamps at it and it stores and consolidates them and in an efficient way.
 
-The TimeTag website can be found here: http://www.timetag.net/
+The TimeTag website can be found here: http://github.com/openxtra/TimeTag
 
 Release
 -------
