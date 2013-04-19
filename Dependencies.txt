@@ -1,0 +1,14 @@
+Microsoft PowerShell 1.0
+http://www.microsoft.com/windowsserver2003/technologies/management/powershell/download.mspx
+
+Microsoft .Net Framework 2.0
+http://www.microsoft.com/downloads/details.aspx?FamilyID=0856EACB-4362-4B0D-8EDD-AAB15C5E04F5&displaylang=en
+
+FileHelpers 2.0
+http://filehelpers.sourceforge.net/
+
+ZedGraph 5.1.4
+http://zedgraph.org/wiki/index.php?title=Main_Page
+
+NUnit 2.4.7
+http://www.nunit.org/index.php

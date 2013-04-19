@@ -1,0 +1,7 @@
+===========================
+= TimeTag in PowerShell =
+===========================
+
+See the online documentation at http://www.timetag.net/docs/user-guide or the PowerShell 
+help using Get-Help <cmdlet>. For example: Get-Help New-TTChart will give you help on the 
+New-TTChart cmdlet.
