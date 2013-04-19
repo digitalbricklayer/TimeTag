@@ -1,40 +1,34 @@
-﻿===============================
-= TimeTag 1.0 Beta 6 Readme =
-===============================
+﻿TimeTag 1.1 Alpha 1 Readme
+==========================
 
-----------------
-- Introduction -
-----------------
+Introduction
+------------
 
 TimeTag is a time series database implemented in C# for the PowerShell and .NET environments. The idea is
 you throw numbers and associated timestamps at it and it stores and consolidates them and in an efficient way.
 
 The TimeTag website can be found here: http://www.timetag.net/
 
------------
-- Release -
------------
+Release
+-------
 
 Whilst the unit tests suggest TimeTag works I wouldn't use it for anything other than messing 
 around with at the moment, mainly because of the lack of "in the field" usage. Until people 
 are using TimeTag in the field and are having success using it I would hesitate to recommend 
 it for "live" use.
 
------------
-- Licence -
------------
+Licence
+-------
 
 TimeTag is licenced under the General Public License v3. See http://www.gnu.org/licenses/gpl.html
 
------------------------------
-- Installation Instructions -
------------------------------
+Installation Instructions
+-------------------------
 
 For PowerShell installation instructions see PowerShell.txt in the same folder as this file.
 
----------
-- Tests -
----------
+Tests
+-----
 
 Unit tests have been created for the PowerShell functionality and for the core library. Both sets of unit tests 
 use NUnit as the test framework.
@@ -49,21 +43,18 @@ website.
 
 All tests are in the TimeTag Tests folder. Code coverage for the Openxtra.TimeTag.Core namespace is 92%.
 
---------
-- TODO -
---------
+TODO
+----
 
-Outstanding issues can be found here: http://code.google.com/p/timetag/issues/list
+Outstanding issues can be found here: http://github.com/openxtra/TimeTag
 
--------------------
-- Release History -
--------------------
+Release History
+---------------
 
-See http://www.timetag.net/docs/release-history
+See http://github.com/openxtra/TimeTag
 
------------------
-- Source layout -
------------------
+Source layout
+-------------
 
 TimeTag
 - bin
@@ -78,16 +69,14 @@ TimeTag
 -- PowerShellTest
 --- Properties
 -- Test Datasets
---- ECAD Precipitation
 - PowerShell
 -- Properties
 - TimeTagSetup
 - inc
 
------------
-- Contact -
------------
+Contact
+-------
 
-Contact the authors, Jack Hughes & Dean Sykes, via the TimeTag website at http://www.timetag.net/contact
+Contact the authors, Jack Hughes & Dean Sykes, via the TimeTag website at http://github.com/openxtra/TimeTag
 
 Enjoy!
