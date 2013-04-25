@@ -61,11 +61,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FileHelpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=3e0c08d59cc3d657, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Documents and Settings\Jack\Desktop\filehelpers\FileHelpers\Binaries\DotNet 2.0\FileHelpers.dll</HintPath>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework, Version=2.4.7.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
@@ -78,9 +76,6 @@
     <Compile Include="ExoticDataSourceFixture.cs" />
     <Compile Include="NaNTortureTestDatabaseFixture.cs" />
     <Compile Include="EmptyDatabaseFixture.cs" />
-    <Compile Include="EcadPrecipitationFixture.cs" />
-    <Compile Include="EcadRecord.cs" />
-    <Compile Include="EcadInfoRecord.cs" />
     <Compile Include="OfficeTemperatureFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadOnlyDatabaseFixture.cs" />
@@ -108,6 +103,9 @@
       <ProductName>.NET Framework 3.5</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

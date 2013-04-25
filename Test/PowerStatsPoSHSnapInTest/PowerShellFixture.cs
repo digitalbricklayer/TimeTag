@@ -7,7 +7,6 @@
     using System.Management.Automation.Runspaces;
     using System.Management.Automation;
     using NUnit.Framework;
-    using NUnit.Framework.SyntaxHelpers;
 
     /// <summary>
     /// Fixture for testing the TimeTag Stats PowerShell snap-in

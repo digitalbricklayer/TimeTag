@@ -3,7 +3,6 @@
     using System;
     using System.IO;
     using NUnit.Framework;
-    using NUnit.Framework.SyntaxHelpers;
     using Openxtra.TimeTag.Database;
 
     /// <summary>
