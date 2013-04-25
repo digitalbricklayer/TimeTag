@@ -33,20 +33,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_7147642129E34306800665E9CF602B80"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_85614BDA23FB439EA987821347ED92C7"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_96E0D648F0FB41989954B3B2753834D3"
-        "OwnerKey" = "8:_7147642129E34306800665E9CF602B80"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -76,19 +64,7 @@
         "Entry"
         {
         "MsmKey" = "8:_D538207417A2BC4DE029A1C8F9C6B78D"
-        "OwnerKey" = "8:_7147642129E34306800665E9CF602B80"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D538207417A2BC4DE029A1C8F9C6B78D"
         "OwnerKey" = "8:_A6D941C84BA544A8BED3DFCAD6E0912C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F285DB0570215421F30B03B28859CE62"
-        "OwnerKey" = "8:_7147642129E34306800665E9CF602B80"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -100,7 +76,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A6D941C84BA544A8BED3DFCAD6E0912C"
+        "OwnerKey" = "8:_D538207417A2BC4DE029A1C8F9C6B78D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -112,19 +88,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7147642129E34306800665E9CF602B80"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D538207417A2BC4DE029A1C8F9C6B78D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F285DB0570215421F30B03B28859CE62"
+        "OwnerKey" = "8:_A6D941C84BA544A8BED3DFCAD6E0912C"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -224,7 +188,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "Version" = "8:2.0.50727"
+                "FrameworkVersion" = "8:2.0.50727"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -370,44 +334,8 @@
             "AssemblyAsmDisplayName" = "8:Openxtra.TimeTag.Database, Version=1.1.0.19956, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_D538207417A2BC4DE029A1C8F9C6B78D"
-                    {
-                    "Name" = "8:Openxtra.TimeTag.Database.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Openxtra.TimeTag.Database.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D7945AD1450A44F380150F46A229ED89"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F285DB0570215421F30B03B28859CE62"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ZedGraph, Version=5.1.4.31904, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_F285DB0570215421F30B03B28859CE62"
-                    {
-                    "Name" = "8:ZedGraph.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:ZedGraph.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D7945AD1450A44F380150F46A229ED89"
@@ -484,6 +412,7 @@
         "ProductCode" = "8:{A1878F50-9147-4CD9-90CF-178D8726F61D}"
         "PackageCode" = "8:{D432D1B1-3326-45EB-96BB-D26E7A623DDA}"
         "UpgradeCode" = "8:{5EAC4BDE-D2DF-4E4B-BB49-8314FE291C9A}"
+        "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
@@ -1000,34 +929,6 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_16A0ACD0BCCA46BF83AEC41A44082F40"
-            {
-            "SourcePath" = "8:"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D7945AD1450A44F380150F46A229ED89"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:Documentation"
-            "OutputProjectGuid" = "8:{6768B4E8-18AC-4689-B827-639CDAC1D6B2}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3F58B4766FBA4536B5B61841BFD3206B"
             {
             "SourcePath" = "8:..\\Src\\Database\\obj\\Debug\\Openxtra.TimeTag.Database.dll"
@@ -1079,34 +980,6 @@
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Documentation"
             "OutputProjectGuid" = "8:{5C149F32-E2DC-46CB-9CB4-FCB1DB2881B4}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_7147642129E34306800665E9CF602B80"
-            {
-            "SourcePath" = "8:..\\Src\\DatabasePoSHSnapIn\\obj\\Debug\\Openxtra.TimeTag.Database.PowerShell.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D7945AD1450A44F380150F46A229ED89"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:Built"
-            "OutputProjectGuid" = "8:{6768B4E8-18AC-4689-B827-639CDAC1D6B2}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {
