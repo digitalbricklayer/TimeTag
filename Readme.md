@@ -1,5 +1,7 @@
-﻿TimeTag 1.1 Alpha 1 Readme
+TimeTag 1.1 Alpha 1 Readme
 ==========================
+
+*Please note: TimeTag is no longer under active development. Please feel free to fork.* If you want to know why, please read [Lessons learnt from the failure of TimeTag](http://www.openxtra.co.uk/blog/lessons-learnt-from-the-failure-of-timetag/).
 
 Introduction
 ------------
