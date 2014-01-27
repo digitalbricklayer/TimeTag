@@ -39,9 +39,7 @@ The EcadPrecipitationFixture uses the whole ECAD precipitation data set, that is
 from over a thousand weather stations. The ECAD fixure is marked as explicit so you need to specifically select 
 it in order to run it.
 
-The ECAD test data set can be downloaded as a seperate item to keep the download as light as possible. If you want to
-run the ECAD unit test you will need to download the ECAD dataset from the http://code.google.com/p/powertime/ 
-website.
+The ECAD test data set can be downloaded as a seperate item to keep the download as light as possible.
 
 All tests are in the TimeTag Tests folder. Code coverage for the Openxtra.TimeTag.Core namespace is 92%.
 
