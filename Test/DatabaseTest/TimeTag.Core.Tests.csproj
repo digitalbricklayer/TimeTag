@@ -83,9 +83,9 @@
     <Compile Include="ThreadedDatabaseFixture.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Src\Database\Database.csproj">
+    <ProjectReference Include="..\..\Src\Database\TimeTag.Core.csproj">
       <Project>{5C149F32-E2DC-46CB-9CB4-FCB1DB2881B4}</Project>
-      <Name>Database</Name>
+      <Name>TimeTag.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
