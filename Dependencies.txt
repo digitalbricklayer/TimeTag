@@ -1,8 +1,4 @@
-Microsoft .Net Framework 2.0
-http://www.microsoft.com/downloads/details.aspx?FamilyID=0856EACB-4362-4B0D-8EDD-AAB15C5E04F5&displaylang=en
+Microsoft .Net Framework 4.0
 
-FileHelpers 2.0
-http://filehelpers.sourceforge.net/
-
-NUnit 2.4.7
+NUnit 2.6.3
 http://www.nunit.org/index.php
