@@ -69,10 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\Src\Includes\ProductInfo.cs">
-      <Link>ProductInfo.cs</Link>
+      <Link>Properties\ProductInfo.cs</Link>
     </Compile>
     <Compile Include="..\..\Src\Includes\Version.cs">
-      <Link>Version.cs</Link>
+      <Link>Properties\Version.cs</Link>
     </Compile>
     <Compile Include="ExoticDataSourceFixture.cs" />
     <Compile Include="NaNTortureTestDatabaseFixture.cs" />
