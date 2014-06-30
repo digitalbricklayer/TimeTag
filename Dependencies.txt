@@ -1,6 +1,3 @@
-Microsoft PowerShell 1.0
-http://www.microsoft.com/windowsserver2003/technologies/management/powershell/download.mspx
-
 Microsoft .Net Framework 2.0
 http://www.microsoft.com/downloads/details.aspx?FamilyID=0856EACB-4362-4B0D-8EDD-AAB15C5E04F5&displaylang=en
 
