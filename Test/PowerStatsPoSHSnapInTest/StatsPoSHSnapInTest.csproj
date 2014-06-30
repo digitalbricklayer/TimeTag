@@ -55,12 +55,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Src\PowerStatsPoSHSnapIn\StatsPoSHSnapIn.csproj">
-      <Project>{31B4FE26-B3C4-44F2-AAD7-0B983E8E17D7}</Project>
-      <Name>StatsPoSHSnapIn</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -7,8 +7,7 @@
     using System.Management.Automation.Runspaces;
     using System.Management.Automation;
     using NUnit.Framework;
-    using NUnit.Framework.SyntaxHelpers;
-    using Openxtra.TimeTag.Database;
+    using Database;
 
     /// <summary>
     /// Fixture for testing the TimeTag PowerShell snap-in
@@ -50,17 +49,6 @@
             DatabaseStats stats = GetDatabaseStats();
             Assert.That(stats.Total, Is.EqualTo(0));
             Assert.That(stats.Discarded, Is.EqualTo(0));
-        }
-
-        [Test]
-        public void TestGraph()
-        {
-            PushChartReadingsIntoDatabase();
-            GenerateGraph();
-            Assert.That(File.Exists(@".\Temperature-All.png"));
-            FileInfo outputChartFile = new FileInfo(@".\Temperature-All.png");
-            Assert.That(outputChartFile.Length, Is.GreaterThan(0));
-            File.Delete(@".\Temperature-All.png");
         }
 
         [Test]

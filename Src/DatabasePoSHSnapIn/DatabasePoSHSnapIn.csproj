@@ -53,10 +53,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Program Files\Reference Assemblies\Microsoft\WindowsPowerShell\v1.0\System.Management.Automation.dll</HintPath>
     </Reference>
-    <Reference Include="ZedGraph, Version=5.1.4.31904, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Documents and Settings\Jack\Desktop\zedgraph\zedgraph_dll_v514_464\zedgraph_dll_v5.1.4\ZedGraph.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\Includes\ProductInfo.cs">
@@ -75,7 +71,6 @@
     <Compile Include="ImportDatabaseCmdlet.cs" />
     <Compile Include="GetStatsCmdlet.cs" />
     <Compile Include="DeleteDatabaseCmdlet.cs" />
-    <Compile Include="NewChartCmdlet.cs" />
     <Compile Include="NewDatabaseCmdlet.cs" />
     <Compile Include="PowerShellSnapIn.cs">
       <SubType>Component</SubType>
@@ -97,6 +92,7 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>"$(SolutionDir)bin\utils\installutil.bat" "$(TargetPath)"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>

@@ -92,7 +92,6 @@
                         new CmdletConfigurationEntry("Get-TTStats",         typeof(GetStatsCmdlet),         cmdletHelpFile),
                         new CmdletConfigurationEntry("Import-TTDatabase",   typeof(ImportDatabaseCmdlet),   cmdletHelpFile),
                         new CmdletConfigurationEntry("Export-TTDatabase",   typeof(ExportDatabaseCmdlet),   cmdletHelpFile),
-                        new CmdletConfigurationEntry("New-TTChart",         typeof(NewChartCmdlet),         cmdletHelpFile),
                         new CmdletConfigurationEntry("Delete-TTDatabase",   typeof(DeleteDatabaseCmdlet),   cmdletHelpFile)
                     };
 

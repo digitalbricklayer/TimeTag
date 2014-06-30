@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6BEF8EF0-3BC6-480F-A16A-68963795B843}"
 	ProjectSection(SolutionItems) = preProject
 		COPYING.txt = COPYING.txt
@@ -12,9 +14,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Src\Database\Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseTest", "Test\DatabaseTest\DatabaseTest.csproj", "{A2AE0267-5CAC-4763-90E9-3413918697B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsPoSHSnapIn", "Src\PowerStatsPoSHSnapIn\StatsPoSHSnapIn.csproj", "{31B4FE26-B3C4-44F2-AAD7-0B983E8E17D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabasePoSHSnapIn", "Src\DatabasePoSHSnapIn\DatabasePoSHSnapIn.csproj", "{6768B4E8-18AC-4689-B827-639CDAC1D6B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsPoSHSnapInTest", "Test\PowerStatsPoSHSnapInTest\StatsPoSHSnapInTest.csproj", "{A6CDE830-1FF4-4C3D-8A5C-4E8ABAFB4572}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabasePoSHSnapInTest", "Test\DatabasePoSHSnapInTest\DatabasePoSHSnapInTest.csproj", "{2A25B360-79FF-4D24-906B-570EA70953FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,14 +32,14 @@ Global
 		{A2AE0267-5CAC-4763-90E9-3413918697B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2AE0267-5CAC-4763-90E9-3413918697B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2AE0267-5CAC-4763-90E9-3413918697B9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31B4FE26-B3C4-44F2-AAD7-0B983E8E17D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31B4FE26-B3C4-44F2-AAD7-0B983E8E17D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31B4FE26-B3C4-44F2-AAD7-0B983E8E17D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31B4FE26-B3C4-44F2-AAD7-0B983E8E17D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A6CDE830-1FF4-4C3D-8A5C-4E8ABAFB4572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A6CDE830-1FF4-4C3D-8A5C-4E8ABAFB4572}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A6CDE830-1FF4-4C3D-8A5C-4E8ABAFB4572}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A6CDE830-1FF4-4C3D-8A5C-4E8ABAFB4572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6768B4E8-18AC-4689-B827-639CDAC1D6B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6768B4E8-18AC-4689-B827-639CDAC1D6B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6768B4E8-18AC-4689-B827-639CDAC1D6B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6768B4E8-18AC-4689-B827-639CDAC1D6B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A25B360-79FF-4D24-906B-570EA70953FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A25B360-79FF-4D24-906B-570EA70953FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A25B360-79FF-4D24-906B-570EA70953FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A25B360-79FF-4D24-906B-570EA70953FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
