@@ -17,13 +17,11 @@
  * along with TimeTag.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-namespace Openxtra.TimeTag.Database
-{
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Diagnostics;
+using System.Collections;
+using System.Collections.Generic;
 
+namespace TimeTag.Core.Binary
+{
     internal class BinaryFileDataSourceCollectionDao : BinaryFileDao, IEnumerable
     {
         private List<BinaryFileDataSourceDao> dataSourceFixupTable = new List<BinaryFileDataSourceDao>();

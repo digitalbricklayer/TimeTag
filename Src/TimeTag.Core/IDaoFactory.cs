@@ -19,8 +19,6 @@
 
 namespace Openxtra.TimeTag.Database
 {
-    using System;
-
     internal interface IDaoFactory
     {
         ITimeSeriesDatabaseDao CreateTimeSeriesDatabase(string filePath);

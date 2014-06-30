@@ -17,12 +17,12 @@
  * along with TimeTag.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-namespace Openxtra.TimeTag.Database
-{
-    using System;
-    using System.IO;
-    using System.Diagnostics;
+using System.Diagnostics;
+using System.IO;
+using Openxtra.TimeTag.Database;
 
+namespace TimeTag.Core.Binary
+{
     internal class BinaryFileFixup : BinaryFileDao, IBinaryFileReaderWriter
     {
         // Name of the entry

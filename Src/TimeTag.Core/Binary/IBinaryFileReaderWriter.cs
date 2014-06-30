@@ -17,11 +17,10 @@
  * along with TimeTag.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-namespace Openxtra.TimeTag.Database
-{
-    using System;
-    using System.IO;
+using System.IO;
 
+namespace TimeTag.Core.Binary
+{
     /// <summary>
     /// Supplies an interface used for reading/writing from/to a binary 
     /// file database

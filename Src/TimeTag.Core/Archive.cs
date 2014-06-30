@@ -17,6 +17,8 @@
  * along with TimeTag.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+using TimeTag.Core.Binary;
+
 namespace Openxtra.TimeTag.Database
 {
     using System;

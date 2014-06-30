@@ -17,11 +17,11 @@
  * along with TimeTag.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-namespace Openxtra.TimeTag.Database
-{
-    using System;
-    using System.IO;
+using System.IO;
+using Openxtra.TimeTag.Database;
 
+namespace TimeTag.Core.Binary
+{
     internal class BinaryFileDataSourceStatsDao : BinaryFileDao
     {
         // The data source to which the stats relate

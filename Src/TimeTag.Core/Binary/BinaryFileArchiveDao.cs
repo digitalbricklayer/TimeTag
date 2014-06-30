@@ -17,12 +17,13 @@
  * along with TimeTag.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-namespace Openxtra.TimeTag.Database
-{
-    using System;
-    using System.IO;
-    using System.Diagnostics;
+using System;
+using System.Diagnostics;
+using System.IO;
+using Openxtra.TimeTag.Database;
 
+namespace TimeTag.Core.Binary
+{
     internal class BinaryFileArchiveDao : BinaryFileDao, IArchiveDao, IBinaryFileReaderWriter
     {
         // Data point circular queue DAO

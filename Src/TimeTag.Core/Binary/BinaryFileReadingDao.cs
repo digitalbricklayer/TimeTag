@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright 2008 OPENXTRA Limited
  * 
  * This file is part of TimeTag.
@@ -17,45 +17,45 @@
  * along with TimeTag.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-namespace Openxtra.TimeTag.Database
+using System.IO;
+using Openxtra.TimeTag.Database;
+
+namespace TimeTag.Core.Binary
 {
-    using System;
-    using System.IO;
-
-    /// <summary>
-    /// Read and write date/time objects to a binary file
-    /// </summary>
-    internal class BinaryFileDateTimeDao : BinaryFileDao
+    internal class BinaryFileReadingDao : BinaryFileDao, IReadingDao, IBinaryFileReaderWriter
     {
-        // The object that knows how to write/read to/from the database
-        private IBinaryFileReaderWriter readWriteable;
+        // The archive into which this reading is embedded
+        private IBinaryFileReaderWriter parent;
 
-        public BinaryFileDateTimeDao(IBinaryFileReaderWriter readerWriterable)
+        // Timestamp DAO
+        private BinaryFileDateTimeDao timestampDao;
+
+        public BinaryFileReadingDao(IBinaryFileReaderWriter parentDao)
         {
-            this.readWriteable = readerWriterable;
+            this.parent = parentDao;
         }
 
         public BinaryWriter Writer
         {
-            get { return this.readWriteable.Writer; }
+            get { return this.parent.Writer; }
         }
 
         public BinaryReader Reader
         {
-            get { return this.readWriteable.Reader; }
+            get { return this.parent.Reader; }
         }
 
-        public void Create(DateTime timestampToCreate)
+        public void Create(ReadingDto dto)
         {
-            Write(timestampToCreate);
+            Write(dto);
         }
 
-        public void Update(DateTime timestampToUpdate)
+        public void Update(ReadingDto dto)
         {
-            Write(timestampToUpdate);
+            Write(dto);
         }
 
-        public DateTime Read()
+        public ReadingDto Read()
         {
             if (Position != BinaryFileDao.UnknownOffset)
             {
@@ -67,15 +67,20 @@ namespace Openxtra.TimeTag.Database
                 Position = Reader.BaseStream.Position;
             }
 
-            /*
-             * The timestamp is always written to the database in UTC. It must 
-             * be converted to the local time zone when retrieved
-             */
-            DateTime utcTimestamp = DateTime.FromBinary(Reader.ReadInt64());
-            return utcTimestamp.ToLocalTime();
+            ReadingDto dto = new ReadingDto();
+
+            dto.Empty = Reader.ReadBoolean();
+            if (this.timestampDao == null)
+            {
+                this.timestampDao = new BinaryFileDateTimeDao(this);
+            }
+            dto.Timestamp = this.timestampDao.Read();
+            dto.Value = Reader.ReadDouble();
+
+            return dto;
         }
 
-        private void Write(DateTime timestampToCreate)
+        private void Write(ReadingDto dto)
         {
             if (Position == BinaryFileDao.UnknownOffset)
             {
@@ -85,12 +90,16 @@ namespace Openxtra.TimeTag.Database
             else
             {
                 // Go to the location of the reading in the file
-                Writer.BaseStream.Seek(Position, SeekOrigin.Begin);
+                Writer.BaseStream.Seek((int) Position, SeekOrigin.Begin);
             }
 
-            // Always write the timestamp as UTC
-            DateTime utcTimestamp = timestampToCreate.ToUniversalTime();
-            Writer.Write(utcTimestamp.ToBinary());
+            Writer.Write(dto.Empty);
+            if (this.timestampDao == null)
+            {
+                this.timestampDao = new BinaryFileDateTimeDao(this);
+            }
+            this.timestampDao.Create(dto.Timestamp);
+            Writer.Write(dto.Value);
         }
     }
 }

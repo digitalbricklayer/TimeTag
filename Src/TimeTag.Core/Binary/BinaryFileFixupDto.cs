@@ -17,25 +17,16 @@
  * along with TimeTag.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-namespace Openxtra.TimeTag.Database
+namespace TimeTag.Core.Binary
 {
-    using System;
-
-    internal abstract class BinaryFileDao
+    internal class BinaryFileFixupDto
     {
-        // Value used to denote an unknown offset
-        public const int UnknownOffset = -1;
+        private string name;
 
-        // Offset (from the beginning of the file) of the database object in the database file
-        private long position = UnknownOffset;
-
-        /// <summary>
-        /// Offset, from the beginning of the file, of the start of the database object
-        /// </summary>
-        public long Position
+        public string Name
         {
-            get { return this.position; }
-            set { this.position = value; }
+            get { return this.name; }
+            set { this.name = value; }
         }
     }
 }

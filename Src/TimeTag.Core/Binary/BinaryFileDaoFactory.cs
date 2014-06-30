@@ -1,7 +1,7 @@
-﻿namespace Openxtra.TimeTag.Database
-{
-    using System;
+﻿using Openxtra.TimeTag.Database;
 
+namespace TimeTag.Core.Binary
+{
     /// <summary>
     /// Factory for binary file data access objects
     /// </summary>

@@ -17,22 +17,19 @@
  * along with TimeTag.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-namespace Openxtra.TimeTag.Database
-{
-    using System;
-    using System.IO;
+using System.IO;
+using Openxtra.TimeTag.Database;
 
-    internal class BinaryFileReadingDao : BinaryFileDao, IReadingDao, IBinaryFileReaderWriter
+namespace TimeTag.Core.Binary
+{
+    internal class BinaryFileRangeDao : BinaryFileDao, IRangeDao, IBinaryFileReaderWriter
     {
         // The archive into which this reading is embedded
         private IBinaryFileReaderWriter parent;
 
-        // Timestamp DAO
-        private BinaryFileDateTimeDao timestampDao;
-
-        public BinaryFileReadingDao(IBinaryFileReaderWriter parentDao)
+        public BinaryFileRangeDao(IBinaryFileReaderWriter parent)
         {
-            this.parent = parentDao;
+            this.parent = parent;
         }
 
         public BinaryWriter Writer
@@ -45,17 +42,17 @@ namespace Openxtra.TimeTag.Database
             get { return this.parent.Reader; }
         }
 
-        public void Create(ReadingDto dto)
+        public void Create(RangeDto dto)
         {
             Write(dto);
         }
 
-        public void Update(ReadingDto dto)
+        public void Update(RangeDto dto)
         {
             Write(dto);
         }
 
-        public ReadingDto Read()
+        public RangeDto Read()
         {
             if (Position != BinaryFileDao.UnknownOffset)
             {
@@ -67,20 +64,15 @@ namespace Openxtra.TimeTag.Database
                 Position = Reader.BaseStream.Position;
             }
 
-            ReadingDto dto = new ReadingDto();
+            RangeDto dto = new RangeDto();
 
-            dto.Empty = Reader.ReadBoolean();
-            if (this.timestampDao == null)
-            {
-                this.timestampDao = new BinaryFileDateTimeDao(this);
-            }
-            dto.Timestamp = this.timestampDao.Read();
-            dto.Value = Reader.ReadDouble();
+            dto.Min = Reader.ReadDouble();
+            dto.Max = Reader.ReadDouble();
 
             return dto;
         }
 
-        private void Write(ReadingDto dto)
+        private void Write(RangeDto dto)
         {
             if (Position == BinaryFileDao.UnknownOffset)
             {
@@ -93,13 +85,8 @@ namespace Openxtra.TimeTag.Database
                 Writer.BaseStream.Seek((int) Position, SeekOrigin.Begin);
             }
 
-            Writer.Write(dto.Empty);
-            if (this.timestampDao == null)
-            {
-                this.timestampDao = new BinaryFileDateTimeDao(this);
-            }
-            this.timestampDao.Create(dto.Timestamp);
-            Writer.Write(dto.Value);
+            Writer.Write(dto.Min);
+            Writer.Write(dto.Max);
         }
     }
 }
