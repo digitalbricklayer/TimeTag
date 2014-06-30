@@ -8,8 +8,8 @@
     <ProjectGuid>{A2AE0267-5CAC-4763-90E9-3413918697B9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Openxtra.TimeTag.Database.Test</RootNamespace>
-    <AssemblyName>Openxtra.TimeTag.Database.Test</AssemblyName>
+    <RootNamespace>TimeTag.Core.Tests</RootNamespace>
+    <AssemblyName>TimeTag.Core.Tests</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
