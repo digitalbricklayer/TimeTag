@@ -10,9 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Readme.md = Readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTag.Core", "Src\Database\TimeTag.Core.csproj", "{5C149F32-E2DC-46CB-9CB4-FCB1DB2881B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTag.Core", "Src\TimeTag.Core\TimeTag.Core.csproj", "{5C149F32-E2DC-46CB-9CB4-FCB1DB2881B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTag.Core.Tests", "Test\DatabaseTest\TimeTag.Core.Tests.csproj", "{A2AE0267-5CAC-4763-90E9-3413918697B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTag.Core.Tests", "Test\TimeTag.Core.Tests\TimeTag.Core.Tests.csproj", "{A2AE0267-5CAC-4763-90E9-3413918697B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
