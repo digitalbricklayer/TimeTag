@@ -22,7 +22,6 @@ using TimeTag.Core.Binary;
 namespace Openxtra.TimeTag.Database
 {
     using System;
-    using System.Collections.Generic;
     using System.Diagnostics;
     using System.IO;
 
